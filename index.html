@@ -15,12 +15,26 @@
           <!-- Buton/input -->
           <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()">
         </a>
+        <button class="btn-palabra" id="nova-palavra" onclick="ensenarPantallaDeAgregarPalabra()">Agregar Palabra</button>
       </div>
-
+      <div id="agregar-palabra" class="palabra-nueva">
+        <input class="text-input" type="text" id="input-nueva-palavra"  maxlength="8" >
+        <div class="form-group">
+          <label for="input-texto"> Máx. 8 caracteres</label>
+        </div>
+        <div class="botones-div">
+          <input class="btn-azul" type="submit" value="Guardar y empezar" id="btn-guardar">
+          <input class="btn-blanco" type="submit" value="Cancelar" id="btn-cancelar">
+        </div> 
+      </div>
     <div id="div-aparece-ahorcado" class="canvas">
       <!-- Canvas -->
-      <canvas id="forca" width="1200" height="860"></canvas>
+      <canvas class="canvas" id="forca" width="1200" height="860"></canvas>
       <div class="subrayado">
+      </div>
+      <div class="botones-div-canvas">
+        <input class="btn-azul" type="submit" value="Nuevo Juego" id="btn-nuevo-juego">
+        <input class="btn-blanco" type="submit" value="Salir" id="btn-salir">
       </div>
     </div>
 <!-- JavaScript -->
